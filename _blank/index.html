@@ -12,7 +12,7 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-    <script src="js/lib/jquery.ui.touch-punch.min.js"></script>
+    <script src="../js/lib/jquery.ui.touch-punch.min.js"></script>
     <script src="../js/lib/miso.ds.deps.js"></script>
     <script src="../js/ranker.js"></script>
     <script>
@@ -46,52 +46,41 @@
 };
     </script>
   </head>
-  
   <body>
-   
-      <div class="container">
-
-        <div id="titlegraphic">
+    <main>
+        <section id="titlegraphic">
             <h1>Ranking Trump's scandals</h1>
-			<p>How would you rank these 25 potentially damning things that Donald Trump has done or said &ndash; or have come to light &ndash; during his campaign for the presidency?</p>
- 
-			<p class="desc">Drag the items up or down to rank them, with the most damning on top. When you submit your results, you'll see how your choice compare with those of other readers.</p>
-        </div>
-      
-        <div id="statsCon">
-    
+            <p>How would you rank these 25 potentially damning things that Donald Trump has done or said &ndash; or have come to light &ndash; during his campaign for the presidency?</p>
+
+            <p class="desc">Drag the items up or down to rank them, with the most damning on top. When you submit your results, you'll see how your choice compare with those of other readers.</p>
+        </section>
+
+        <section id="statsCon">
             <div id="statsAll" class="connectedSortable">
-             
-              <div id="sortableStats">
-					<div id="a1" class="dragger"><input type="checkbox" id="a1" class="statsCheck" onchange="cbChanged(this,1);"><p></p></div>
-					<div id="a2" class="dragger"><input type="checkbox" id="a2" class="statsCheck" onchange="cbChanged(this,2);"><p></p></div>
-					<div id="a3" class="dragger"><input type="checkbox" id="a3" class="statsCheck" onchange="cbChanged(this,3);" ><p</p></div>
-					<div id="a4" class="dragger"><input type="checkbox" id="a4" class="statsCheck" onchange="cbChanged(this,4);"><p></p></div>
-					<div id="a5" class="dragger"><input type="checkbox" id="a5" class="statsCheck" onchange="cbChanged(this,5);"><p></p></div>
-					<div id="a6" class="dragger"><input type="checkbox" id="a6" class="statsCheck" onchange="cbChanged(this,6);"><p></p></div>
-					<div id="a7" class="dragger"><input type="checkbox" id="a7" class="statsCheck" onchange="cbChanged(this,7);"><p></p></div>
-					<div id="a8" class="dragger"><input type="checkbox" id="a8" class="statsCheck" onchange="cbChanged(this,8);" ><p></p></div>
-					<div id="a9" class="dragger"><input type="checkbox" id="a9" class="statsCheck" onchange="cbChanged(this,9);" ><p></p></div>
-               </div>
-              <!--div class="imp">LESS SCANDALOUS</div-->
-              <div id="shorts">
+                <div id="sortableStats">
+                    <div id="a1" class="dragger"><input type="checkbox" id="a1" class="statsCheck" onchange="cbChanged(this,1);"><p></p></div>
+                    <div id="a2" class="dragger"><input type="checkbox" id="a2" class="statsCheck" onchange="cbChanged(this,2);"><p></p></div>
+                    <div id="a3" class="dragger"><input type="checkbox" id="a3" class="statsCheck" onchange="cbChanged(this,3);" ><p</p></div>
+                    <div id="a4" class="dragger"><input type="checkbox" id="a4" class="statsCheck" onchange="cbChanged(this,4);"><p></p></div>
+                    <div id="a5" class="dragger"><input type="checkbox" id="a5" class="statsCheck" onchange="cbChanged(this,5);"><p></p></div>
+                    <div id="a6" class="dragger"><input type="checkbox" id="a6" class="statsCheck" onchange="cbChanged(this,6);"><p></p></div>
+                    <div id="a7" class="dragger"><input type="checkbox" id="a7" class="statsCheck" onchange="cbChanged(this,7);"><p></p></div>
+                    <div id="a8" class="dragger"><input type="checkbox" id="a8" class="statsCheck" onchange="cbChanged(this,8);" ><p></p></div>
+                    <div id="a9" class="dragger"><input type="checkbox" id="a9" class="statsCheck" onchange="cbChanged(this,9);" ><p></p></div>
+                </div>
+            </div>
+            <!--div class="imp">LESS SCANDALOUS</div-->
+            <div id="shorts">
                 <button id="submitbtn">Submit your rankings</button>
-              </div>
+            </div>
+        </section>
 
-          </div>
-            
-            
-            <div id="rankResults">
-             
-              <div class="imp">SURVEY SAYS:</div>
-              <div id="resultsList">
-
-              </div>
-              <!--div class="imp">LEAST SCANDALOUS</div-->
-
-          </div>
-
-       </div> <!-- /container custom -->
+        <div id="rankResults">
+            <div class="imp">SURVEY SAYS:</div>
+            <div id="resultsList"></div>
+        <!--div class="imp">LEAST SCANDALOUS</div-->
+        </div>
+    </main>
 
     <script src="../js/lib/bootstrap.min.js"></script>
   </body>
