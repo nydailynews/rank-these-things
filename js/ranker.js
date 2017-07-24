@@ -54,7 +54,7 @@ $(document).ready(function(){ // begin document.ready block
  
 ************************************************************/
 	
-	$('#rankResults').hide();
+	$('#rankResults').addClass('hide');
 	buildSortStats()
 	
 	
@@ -132,19 +132,15 @@ function shuffle(array) {
 		var rankOrder = sortedIDs.join("|");
 		
 		//process selections in php script
-		$('#resultsList').load('incl/ranker.php?ranking='+rankOrder, function(){
-			$('#statsAll').hide();
-			$('#rankResults').show();
+		$('#resultsList').load('../incl/ranker.php?ranking='+rankOrder, function(){
+			$('#statsAll').addClass('hide');
+			$('#rankResults').removeClass('hide');
 		});
 	});
 
-	$('#reset').click(function () {
-    	$("#sortableStats").html(resetText);
-	});
-
 	$('#return').click(function () {
-		$('#rankResults').hide();
-		$('#statsAll').show();
+		$('#rankResults').addClass('hide');
+		$('#statsAll').removeClass('hide');
 	});
 
 }); // end document.ready block
@@ -173,4 +169,3 @@ function doneSort() {
     	sortedIDs[i] = $(this).attr('id');
     });
 }
-
