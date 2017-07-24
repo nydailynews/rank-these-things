@@ -4,9 +4,11 @@
     <title>TITLE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
-    <!-- Bootstrap -->
-    <!--link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen"-->
+    <meta name="distribution" content="global" />
+    <meta name="robots" content="noindex" />
+    <meta name="language" content="en, sv" />
+    <!-- EDIT: Add the URL of the article this quiz is embedded in, once you know what that is -->
+    <link rel="canonical" href="" />
     <link href="../css/ranker.css" rel="stylesheet" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700|PT+Serif' rel='stylesheet' type='text/css'>
 
@@ -14,7 +16,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <script src="../js/lib/jquery.ui.touch-punch.min.js"></script>
     <script src="../js/lib/miso.ds.deps.js"></script>
-    <script src="../js/ranker.js"></script>
+    <script src="../js/ranker.min.js"></script>
     <script>
 	// array of sortableStats titles and ids
 	var statNames = {
@@ -48,11 +50,9 @@
   </head>
   <body>
     <main>
-        <section id="titlegraphic">
-            <h1>TITLE</h1>
-            <p>DESCRIPTION</p>
-            <p class="desc">Drag the items up or down to rank them, with the most damning on top. When you submit your results, you'll see how your choice compare with those of other readers.</p>
-        </section>
+        <h1>TITLE</h1>
+        <p>DESCRIPTION</p>
+        <p class="desc">Drag the items up or down to rank them, with the most damning on top. When you submit your results, you'll see how your choice compare with those of other readers.</p>
 
         <section id="statsCon">
             <div id="statsAll" class="connectedSortable">

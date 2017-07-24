@@ -34,7 +34,7 @@ p.desc { margin-top: 10px;
     margin-top: 2px;
 }
 #statsCon .emptySlot p {
-    font: 10px Arial;
+    font: 10px "Open Sans", sans-serif;
     color: #CCC;
     text-align: center;
     margin-top: 7px;
@@ -64,10 +64,10 @@ p.desc { margin-top: 10px;
     font-weight: bold;
 }
 #statsCon .instruct {
-    font: italic 12px Arial;
+    font: italic 12px "Open Sans", sans-serif;
     margin-bottom: 10px}
 #statsCon .imp {
-    font: 11px Arial;
+    font: 11px "Open Sans", sans-serif;
     color: #333;
      margin-top: 6px;
     margin-left: 5px;
@@ -76,7 +76,7 @@ p.desc { margin-top: 10px;
     margin: 10px;
 }
 #shorts a {
-    font: 14px Arial;
+    font: 14px "Open Sans", sans-serif;
     color: #006;
     text-decoration: none;
 }
@@ -123,7 +123,7 @@ p.desc { margin-top: 10px;
     margin: 10px 5px 0 10px }
 
 .urank {
-    font: 11px Arial;
+    font: 11px "Open Sans", sans-serif;
     font-weight: bold;
     color: rgb(143, 50, 83);
      margin: 3px 4px 3px 1px;
@@ -131,7 +131,7 @@ p.desc { margin-top: 10px;
     text-transform: none;
 }
 .voteperc {
-    font: 11px Arial;
+    font: 11px "Open Sans", sans-serif;
     font-weight: bold;
     color: rgb(36, 58, 172);
     margin: 3px 4px 7px 4px;
@@ -150,7 +150,7 @@ p.desc { margin-top: 10px;
     text-align: center;
 }
 #drops .imp {
-    font: 10px Arial;
+    font: 10px "Open Sans", sans-serif;
     color: #CCC;
     margin-top: 4px;
  }
@@ -174,7 +174,7 @@ p.desc { margin-top: 10px;
     padding-left: 55px;
 }
 .module .main .teamModule .teamInfoText .cityName {
-    font: 9px Arial;
+    font: 9px "Open Sans", sans-serif;
     text-transform: uppercase;
     color: #666;
 }
@@ -187,7 +187,7 @@ p.desc { margin-top: 10px;
 }
 .module .main .teamModule .teamInfoText .teamData {
     margin-top: 1px;
-    font: 11px Arial;
+    font: 11px "Open Sans", sans-serif;
     color: #666;
 }
 
@@ -195,7 +195,7 @@ p.desc { margin-top: 10px;
     margin-top: 10px;
 }
 .module .main .teamModule .teamStatsCon .teamStat {
-    font: 11px Arial;
+    font: 11px "Open Sans", sans-serif;
     color: #666;
     padding: 3px;
     background-color: #f1f1f1;
@@ -220,14 +220,14 @@ p.desc { margin-top: 10px;
     border-radius: 5px;
     background-color: #333;
     color: #FFF;
-    font: bold 30px Arial;
+    font: bold 30px "Open Sans", sans-serif;
     text-align: center;
     padding-top: 5px;
     float: left;
     margin-right: 5px;
 }
 .main .teamModule .calcCon .numBoxLabel {
-    font: 10px Arial;
+    font: 10px "Open Sans", sans-serif;
     color: #999;
     padding-top: 15px;
 }
@@ -239,7 +239,7 @@ p.desc { margin-top: 10px;
     margin-top: 40px;
 }
 #sharematch p {
-    margin: 0px;
+    margin: 0;
     background: url('../img/twitter-bird.png') no-repeat left center;
     padding-left: 30px;
     text-align: left;
@@ -255,17 +255,17 @@ p.desc { margin-top: 10px;
 
 #leaderboard ul {
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    font: 12px Arial;
+    margin: 0;
+    padding: 0;
+    font: 12px "Open Sans", sans-serif;
     color: #333;
     min-height: 120px;
 }
 
 #sourceCreds {
-	font: italic 11px Arial;
+	font: italic 11px "Open Sans", sans-serif;
 	color: #999;
-	margin: 10px 0 10px 0px;
+	margin: 10px 0 10px 0;
 	border-top: 1px solid #e2e2e2;
 	padding: 5px 0 0 0;
 }
@@ -278,7 +278,7 @@ p.desc { margin-top: 10px;
 	height: 20px;
 	float: right;
 	background: url('../img/glyphicons-halflings.png');
-	background-position: -310px 0px;
+	background-position: -310px 0;
 	opacity: 0.2;
   	filter: alpha(opacity=20);
  }
@@ -287,7 +287,9 @@ p.desc { margin-top: 10px;
     filter: alpha(opacity=100);
     cursor: pointer;
 }
-
+.hide {
+    display: none;
+}
 
 @media (max-width: 500px) {
 	.module .main .teamModule {
@@ -299,3 +301,4 @@ p.desc { margin-top: 10px;
         border-top: none;
     }
 }
+
