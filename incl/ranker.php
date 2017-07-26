@@ -19,26 +19,26 @@ $rankList;
 $rankings;
 $votingtotal;
 $vtotal;
-$table = 'trump';
 
 if ($_GET):
 
-## capture variables from the URL
-	$rankingsAll = $_GET['ranking'];
+	## capture variables from the URL
+	$rankingsAll = htmlspecialchars($_GET['ranking']);
 	$rankList = explode("|", $rankingsAll);
 
 	$len = count($rankList);
 	
 	for ($i = 0; $i < $len; $i++):
 		//echo $rankList[$i];
-		$sql = "UPDATE $table
+		$sql = "UPDATE ranker_items
 					SET	rank_total = rank_total + ($len - $i)
 					WHERE ranker_id = '$rankList[$i]'";
 		$results = mysqli_query($connection->con,$sql);
     endfor;
 
-	$sql = "SELECT * from $table
-			order by rank_total desc";
+	$sql = "SELECT * from ranker_items
+			order by rank_total desc
+			WHERE ranker_id = ";
 	$results = mysqli_query($connection->con,$sql);
 	while($rankings[]=mysqli_fetch_array($results));
 	

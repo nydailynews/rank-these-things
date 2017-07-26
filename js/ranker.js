@@ -66,10 +66,8 @@ $(document).ready(function(){ // begin document.ready block
 
 function buildSortStats() {
 	
-    // MOVED THIS VAR TO THE HTML FILE TO REDUCE THE NUMBER OF FILES
-    // WE HAVE TO CHANGE FOR EACH RANKER WE WANT
-	// array of sortableStats titles and ids
-	//var statNames = {'a1':'1868: A. Johnson: Impeachment', 'a2':'1875: Grant: The Whiskey Ring','a3':'1921-23: Harding: Teapot Dome','a4':'1973: Nixon: Watergate','a5':'1973: Nixon: Agnew resignation','a6':'1986: Reagan: Iran-Contra affair','a7':'1998: Clinton: Lewinsky affair','a8':'2006-2007: Bush: U.S. attorneys', 'a9':'2007: Bush: Valerie Plame', 'a10': '2012: Obama: Benghazi', 'a11': '2013: Obama: IRS', 'a12': '2013: Obama: AP phone records'};
+	// array of sortableStats titles and ids is called statNames
+    // and is set in the head element of the ranker's html file.
 	var fullStats = shuffle(Object.keys(statNames));
 	// compares sortedIDs[] to full list of stats and adds whatever is missing
 	
