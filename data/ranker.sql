@@ -6,8 +6,8 @@ CREATE TABLE ranker (
   `starts` INT(10) NOT NULL,
   `finishes` INT(10) NOT NULL,
   `create_date` DATE NOT NULL,
-  PRIMARY KEY (id),
-) ENGINE=InnoDB  DEFAULT AUTO_INCREMENT=0;
+  PRIMARY KEY (id)
+) ENGINE=InnoDB AUTO_INCREMENT=0;
 
 CREATE TABLE ranker_items (
   `id` INT(10) NOT NULL AUTO_INCREMENT,
@@ -16,5 +16,5 @@ CREATE TABLE ranker_items (
   `rank_total` INT(14) NOT NULL DEFAULT 0,
   PRIMARY KEY (id),
   INDEX `RANKER_ID` (`ranker_id`)
-) ENGINE=InnoDB  DEFAULT AUTO_INCREMENT=0;
+) ENGINE=InnoDB AUTO_INCREMENT=0;
 
