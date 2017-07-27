@@ -10,8 +10,10 @@ overview: captures users ranked selections and inserts them into data table. ret
 
 *******************************************************************************/
 		
-	require_once 'Connection.class.php';
-	$connection = new Connection('ranker','ranker');
+//	require_once 'Connection.class.php';
+//	$connection = new Connection('ranker','ranker');
+// * ASSUMES CONNECTION IS ESTABLISHED AND THIS FILE IS BEING INCLUDED
+// BY ANOTHER PHP FILE THAT CONNECTS TO THE DB.
 
 ## variables to hold URL variables
 $rankingsAll;
