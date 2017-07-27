@@ -25,7 +25,7 @@ if ( isset($_GET['ranking']) ):
 	
 	// Update the score of the individual items
 	for ($i = 0; $i < $len; $i++):
-		//echo $rankList[$i];
+		echo $rankList[$i];
 		$sql = "UPDATE ranker_items
 					SET	rank_total = rank_total + ($len - $i)
 					WHERE ranker_id = $rankList[$i]";
@@ -39,12 +39,11 @@ if ( isset($_GET['ranking']) ):
 
 	// Query the db for the new order of the ranked items.
 	$sql = 'SELECT * from ranker_items
-			order by rank_total desc
-			WHERE ranker_id = ' . $ranker_id;
-	$results = @mysql_query($sql);
-	while($rankings[]=mysql_fetch_array($results));
+			WHERE ranker_id = ' . $ranker_id . '
+			ORDER BY rank_total DESC';
+	$results = mysql_query($sql);
+	while ( $rankings[]=mysql_fetch_assoc($results) );
 	
-endif;
 
 $rlen = count($rankings);
 for ($i = 0; $i < $rlen-1; $i++):
@@ -53,3 +52,4 @@ for ($i = 0; $i < $rlen-1; $i++):
     <div class="dragger"><p><?php echo $i+1 ?>. <?php echo str_replace('\\', '', $rankings[$i]['title']); ?><span class="urank">You said: <?php echo $userrank+1; ?></span></p></div>
 					
 <?php endfor;
+endif;
