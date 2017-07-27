@@ -130,7 +130,7 @@ function shuffle(array) {
 		var rankOrder = sortedIDs.join("|");
 		
 		//process selections in php script
-		$('#resultsList').load('../incl/ranker.php?ranking='+rankOrder, function(){
+		$('#resultsList').load('handler.php?ranking='+rankOrder, function(){
 			$('#statsAll').addClass('hide');
 			$('#rankResults').removeClass('hide');
 		});
