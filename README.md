@@ -1,4 +1,4 @@
-# Ranker
+# Rank These Things
 
 ## What is this?
 A drag and drop news quiz to collect users' arrangements of a list of choices.
