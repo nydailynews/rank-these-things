@@ -128,7 +128,7 @@ function shuffle(array) {
 		
 		//process selections in php script
 		$('#resultsList').load('handler.php?ranking='+rankOrder, function(){
-			$('#statsAll').addClass('hide');
+			$('#statsCon').addClass('hide');
 			$('#rankResults').removeClass('hide');
 		});
 	});

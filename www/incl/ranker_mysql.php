@@ -26,7 +26,6 @@ if ( isset($_GET['ranking']) ):
 	
 	// Update the score of the individual items
 	for ($i = 0; $i < $len; $i++):
-		echo $rankList[$i];
 		$id = intval(str_replace($item_prefix, '', $rankList[$i]));
 		$sql = "UPDATE ranker_items
 					SET	rank_total = rank_total + ($len - $i)
