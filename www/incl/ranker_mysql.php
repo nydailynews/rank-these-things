@@ -13,6 +13,13 @@ overview: captures users ranked selections and inserts them into data table. ret
 // * ASSUMES CONNECTION IS ESTABLISHED AND THIS FILE IS BEING INCLUDED
 // BY ANOTHER PHP FILE THAT CONNECTS TO THE DB.
 // I KNOW THAT mysql_query IS OOOOOLD BUT I'M NOT UPGRADING THE SERVER SORRY NOT SORRY
+function ordinal($number) {
+    $ends = array('th','st','nd','rd','th','th','th','th','th','th');
+    if ((($number % 100) >= 11) && (($number%100) <= 13))
+        return $number. 'th';
+    else
+        return $number. $ends[$number % 10];
+}
 
 if ( isset($_GET['ranking']) ):
 
@@ -50,7 +57,7 @@ $rlen = count($rankings);
 for ($i = 0; $i < $rlen-1; $i++):
     $userrank = array_search($item_prefix . $rankings[$i]['id'], $rankList);
 ?>
-    <div class="dragger"><p><?php echo $i+1 ?>. <?php echo str_replace('\\', '', $rankings[$i]['title']); ?><span class="urank">You said: <?php echo $userrank+1; ?></span></p></div>
+    <div class="dragger"><p><?php echo $i+1 ?>. <?php echo str_replace('\\', '', $rankings[$i]['title']); ?><span class="urank">You said: <?php echo ordinal($userrank+1); ?></span></p></div>
 					
 <?php endfor;
 endif;
