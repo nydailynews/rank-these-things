@@ -1,7 +1,7 @@
 # Rank These Things
 
 ## What is this?
-A drag and drop news quiz to collect users' arrangements of a list of choices.
+A drag and drop news poll to collect users' arrangements of a list of choices.
 Demo: http://www.nydailynews.com/entertainment/tv/game-thrones-character-iron-throne-article-1.3365102
 
 ![ranker inaction](screenshots/ranker.png)
@@ -31,6 +31,6 @@ The project contains the following folders and important files:
 * The statNames in each ranker's html document's `<head>` element
 * The handler.php in each ranker's directory
 
-## License
+#### How to set up the database
 
-This code is available under the MIT license. For more information, please see the LICENSE.txt file in this repo.
+### How to create a new ranker
