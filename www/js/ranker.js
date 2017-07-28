@@ -83,12 +83,9 @@ function buildSortStats() {
 	// loop through, build, and append sortable stats to #sortableStats div
 	var len = statsList.length;
 	for (var i=0; i<len; i++) {
-		var statNameID = statsList[i];
-		$('#sortableStats').append('<div id="item-'+statsList[i]+'" class="dragger"><p>'+ statNames[statNameID] + '</p></div>')
+		$('#sortableStats').append('<div id="item-'+statsList[i]+'" class="dragger"><p>'+ statNames[statsList[i]] + '</p></div>')
 	}
-
 	resetText = $("#sortableStats").html();
-
 }
 
 // From http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array

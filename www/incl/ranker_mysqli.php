@@ -38,9 +38,8 @@ if ($_GET):
 		$results = mysqli_query($connection->con,$sql);
     endfor;
 
-	$sql = "SELECT * from ranker_items
-			order by rank_total desc
-			WHERE ranker_id = ";
+    $sql = "SELECT * from $table
+            order by rank_total desc";
 	$results = mysqli_query($connection->con,$sql);
 	while($rankings[]=mysqli_fetch_array($results));
 	
