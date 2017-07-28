@@ -4,6 +4,9 @@ body {
     line-height: 20px;
     color: rgb(51, 51, 51);
 }
+h1 {
+    line-height: 25px;
+}
 p {
     font-family: "PT Serif", serif;
     text-align: left;
