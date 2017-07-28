@@ -15,9 +15,7 @@ p.desc { margin-top: 10px;
 
 #statsCon {
     float: left;
-    margin-right: 5px;
     margin-top: 5px;
-    padding-right: 10px;
     width: 100%;
 }
 #statsCon .emptySlot {
@@ -94,7 +92,7 @@ button {
 .dragger p { 
     font-family: 'Open Sans Condensed', sans-serif;
     color: #000;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     margin: 4px 0 0 4px;
     text-shadow: 0.1em 0.1em #CCC;
@@ -104,7 +102,7 @@ button {
     margin: 10px 5px 0 10px }
 
 .urank {
-    font: 11px "Open Sans", sans-serif;
+    font: 13px "Open Sans", sans-serif;
     font-weight: bold;
     color: rgb(143, 50, 83);
      margin: 3px 4px 3px 1px;
