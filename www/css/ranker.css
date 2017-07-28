@@ -9,9 +9,6 @@ p {
     text-align: left;
     font-size: 16px;
 }
-p.desc { margin-top: 10px;
-    color: #666;
-}
 
 #statsCon {
     float: left;
