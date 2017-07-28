@@ -80,11 +80,11 @@ function buildSortStats() {
 	//Empty out existing html
 	$('#sortableStats').html('');
 	
-	// loop through, build, and append sortable stats to #sortableStats <div>
+	// loop through, build, and append sortable stats to #sortableStats div
 	var len = statsList.length;
 	for (var i=0; i<len; i++) {
 		var statNameID = statsList[i];
-		$('#sortableStats').append('<div id="'+statsList[i]+'" class="dragger"><p>'+eval("statNames." + statNameID) + '</p></div>')
+		$('#sortableStats').append('<div id="item-'+statsList[i]+'" class="dragger"><p>'+ statNames[statNameID] + '</p></div>')
 	}
 
 	resetText = $("#sortableStats").html();
@@ -135,12 +135,6 @@ function shuffle(array) {
 			$('#rankResults').removeClass('hide');
 		});
 	});
-
-	$('#return').click(function () {
-		$('#rankResults').addClass('hide');
-		$('#statsAll').removeClass('hide');
-	});
-
 }); // end document.ready block
 
 
