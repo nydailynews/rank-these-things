@@ -72,15 +72,24 @@ p.desc { margin-top: 10px;
      margin-top: 6px;
     margin-left: 5px;
 }
-#shorts {
+button {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    line-height: 28px;
     margin: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #136DF8;
+    color: white;
+    height: 43px;
+    border: 0;
+    padding: 0 25px;
 }
 #shorts a {
     font: 14px "Open Sans", sans-serif;
     color: #006;
     text-decoration: none;
 }
-#shorts button { }
 
 #statsCon .dragger { 
 	min-height: 25px;

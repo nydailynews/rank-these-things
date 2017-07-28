@@ -16,10 +16,10 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <script src="../js/lib/jquery.ui.touch-punch.min.js"></script>
     <script src="../js/lib/miso.ds.deps.js"></script>
-<!--
     <script src="../js/ranker.min.js"></script>
--->
+<!--
     <script src="../js/ranker.js"></script>
+-->
     <script>
 	// array of sortableStats titles and ids
 	var statNames = {
@@ -43,7 +43,7 @@
     <main>
         <h1>TITLE</h1>
         <p>DESCRIPTION</p>
-        <p class="desc">Drag the items up or down to rank them, with the most damning on top. When you submit your results, you'll see how your choice compare with those of other readers.</p>
+        <p class="desc">Drag the items up or down to rank them, with the most damning on top. When you submit your results, you'll see how your picks compare with other readers'.</p>
 
         <section id="statsCon">
             <div id="statsAll" class="connectedSortable">
@@ -59,9 +59,7 @@
                     <div id="item-9" class="dragger"><input type="checkbox" id="a9" class="statsCheck" onchange="cbChanged(this,9);" ><p></p></div>
                 </div>
             </div>
-            <div id="shorts">
-                <button id="submitbtn">Submit your rankings</button>
-            </div>
+            <button id="submitbtn">Submit your rankings</button>
         </section>
 
         <section id="rankResults">
