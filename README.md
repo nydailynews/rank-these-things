@@ -34,3 +34,8 @@ The project contains the following folders and important files:
 #### How to set up the database
 
 ### How to create a new ranker
+1. cd into the www/ directory and copy the `_blank` to new directory named after your project.
+1. Edit the list in `var statNames = {` with whatever you want to rank.
+1. Replace `TITLE` text (it's in two places) with what it is you're ranking for example "Rank the biggest draft busts in New York Jets history."
+1. Make sure the number of items in `<div id="sortableStats">` matches the number of items you're ranking. 
+1. Copy the contents of [www/data/items.sql](www/data/items.sql) into a scratch text file somewhere.
