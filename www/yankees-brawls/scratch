@@ -1,0 +1,12 @@
+NSERT INTO ranker (slug, create_date) VALUES ('new-york-jets-draft-busts', NOW());
+  2 INSERT INTO ranker_items (ranker_id, title) VALUES
+  3 ('Yankees vs. Orioles, May 19, 1998'),
+  4 ('Yankees vs. Red Sox, ALCS, Oct. 11, 2003'),
+  5 ('Yankees vs. Tigers, Aug. 17, 2017'),
+  6 ('Yankees vs. Red Sox, April 11,2018'),
+  7 ('Yankees vs. Red Sox, May, 5 1976'),
+  8 ('Yankees vs. Marines, Aug. 29, 1996'),
+  9 ('Yankees vs. Royals, ALCS, Oct. 9, 1977 '),
+ 10 ('Yankees vs. Angels, June, 10, 1978'),
+ 11 ('Yankees vs. Angels, Sept. 9, 2008'),
+ 12 ('Yankees vs. Red Sox, July 24, 2004 ');

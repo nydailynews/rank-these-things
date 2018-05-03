@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rank 'Em: the Biggest Yankees Brawls</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="distribution" content="global" />
+    <meta name="robots" content="noindex" />
+    <meta name="language" content="en, sv" />
+    <!-- EDIT: Add the URL of the article this quiz is embedded in, once you know what that is -->
+    <link rel="canonical" href="" />
+    <link href="../css/ranker.css" rel="stylesheet" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700|PT+Serif' rel='stylesheet' type='text/css'>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="../js/lib/jquery.ui.touch-punch.min.js"></script>
+    <script src="../js/lib/miso.ds.deps.js"></script>
+    <script src="../js/ranker.min.js"></script>
+<!--
+    <script src="../js/ranker.js"></script>
+-->
+    <script>
+	// array of sortableStats titles and ids
+	var statNames = {
+     3 ('Yankees vs. Orioles, May 19, 1998'),
+     4 ('Yankees vs. Red Sox, ALCS, Oct. 11, 2003'),
+     5 ('Yankees vs. Tigers, Aug. 17, 2017'),
+     6 ('Yankees vs. Red Sox, April 11,2018'),
+     7 ('Yankees vs. Red Sox, May, 5 1976'),
+     8 ('Yankees vs. Marines, Aug. 29, 1996'),
+     9 ('Yankees vs. Royals, ALCS, Oct. 9, 1977 '),
+   10 ('Yankees vs. Angels, June, 10, 1978'),
+   11 ('Yankees vs. Angels, Sept. 9, 2008'),
+   12 ('Yankees vs. Red Sox, July 24, 2004');
+};
+    </script>
+  </head>
+  <body>
+    <main>
+        <h1>Rank 'Em: The Biggest Yankees Brawls</h1>
+        <p>DESCRIPTION</p>
+        <p class="desc">Drag the items up or down to rank them, with the biggest brawl on top. When you submit your results, you'll see how your picks compare with other readers'.</p>
+
+        <section id="statsCon">
+            <div id="statsAll" class="connectedSortable">
+                <div id="sortableStats">
+                    <div id="item-1" class="dragger"><input type="checkbox" id="a1" class="statsCheck" onchange="cbChanged(this,1);"><p></p></div>
+                    <div id="item-2" class="dragger"><input type="checkbox" id="a2" class="statsCheck" onchange="cbChanged(this,2);"><p></p></div>
+                    <div id="item-3" class="dragger"><input type="checkbox" id="a3" class="statsCheck" onchange="cbChanged(this,3);" ><p</p></div>
+                    <div id="item-4" class="dragger"><input type="checkbox" id="a4" class="statsCheck" onchange="cbChanged(this,4);"><p></p></div>
+                    <div id="item-5" class="dragger"><input type="checkbox" id="a5" class="statsCheck" onchange="cbChanged(this,5);"><p></p></div>
+                    <div id="item-6" class="dragger"><input type="checkbox" id="a6" class="statsCheck" onchange="cbChanged(this,6);"><p></p></div>
+                    <div id="item-7" class="dragger"><input type="checkbox" id="a7" class="statsCheck" onchange="cbChanged(this,7);"><p></p></div>
+                    <div id="item-8" class="dragger"><input type="checkbox" id="a8" class="statsCheck" onchange="cbChanged(this,8);" ><p></p></div>
+                    <div id="item-9" class="dragger"><input type="checkbox" id="a9" class="statsCheck" onchange="cbChanged(this,9);" ><p></p></div>
+                </div>
+            </div>
+            <button id="submitbtn">Submit your rankings</button>
+        </section>
+
+        <section id="rankResults">
+            <h2>OVERALL READER PICKS:</h2>
+            <p>Rankings based on the total votes.</p>
+            <div id="resultsList"></div>
+        </section>
+    </main>
+
+    <script src="../js/lib/bootstrap.min.js"></script>
+  </body>
+</html>
