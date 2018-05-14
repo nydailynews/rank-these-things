@@ -10,7 +10,7 @@
     <!-- EDIT: Add the URL of the article this quiz is embedded in, once you know what that is -->
     <link rel="canonical" href="" />
     <link href="../css/ranker.css" rel="stylesheet" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700|PT+Serif' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700|PT+Serif' rel='stylesheet'>
 
     <script src="//interactive.nydailynews.com/js/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
@@ -23,7 +23,7 @@
     <script>
 	// array of sortableStats titles and ids
 	var statNames = {
-     '1': ('Yankees vs. Orioles, May 19, 1998'),
+     '1': ('<img src="img/thumb/yankees-orioles-brawl-1998.jpg" alt="Yankees vs. Orioles, May 19, 1998">Yankees vs. Orioles, May 19, 1998'),
      '2': ('Yankees vs. Red Sox, ALCS, Oct. 11, 2003'),
      '3': ('Yankees vs. Tigers, Aug. 17, 2017'),
      '4': ('Yankees vs. Red Sox, April 11,2018'),
@@ -35,6 +35,20 @@
    '10': ('Yankees vs. Red Sox, July 24, 2004')
 };
     </script>
+<style>
+#statsCon .with-image {
+    min-height: 100px;
+}
+#statsCon .with-image .dragger p {
+	vertical-align: middle;
+}
+#statsCon .with-image .dragger img {
+	margin: 0 5px 0 0;
+    width: 100px;
+    height: 100px;
+    float: none;
+}
+</style>
   </head>
   <body>
     <main>
@@ -44,7 +58,7 @@
 
         <section id="statsCon">
             <div id="statsAll" class="connectedSortable">
-                <div id="sortableStats">
+                <div id="sortableStats" class="with-image">
                     <div id="item-1" class="dragger"><input type="checkbox" id="a1" class="statsCheck" onchange="cbChanged(this,1);"><p></p></div>
                     <div id="item-2" class="dragger"><input type="checkbox" id="a2" class="statsCheck" onchange="cbChanged(this,2);"><p></p></div>
                     <div id="item-3" class="dragger"><input type="checkbox" id="a3" class="statsCheck" onchange="cbChanged(this,3);" ><p</p></div>
