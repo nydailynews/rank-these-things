@@ -12,7 +12,7 @@
     <link href="../css/ranker.css" rel="stylesheet" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700|PT+Serif' rel='stylesheet' type='text/css'>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//interactive.nydailynews.com/js/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <script src="../js/lib/jquery.ui.touch-punch.min.js"></script>
     <script src="../js/lib/miso.ds.deps.js"></script>
@@ -23,16 +23,16 @@
     <script>
 	// array of sortableStats titles and ids
 	var statNames = {
-     3 ('Yankees vs. Orioles, May 19, 1998'),
-     4 ('Yankees vs. Red Sox, ALCS, Oct. 11, 2003'),
-     5 ('Yankees vs. Tigers, Aug. 17, 2017'),
-     6 ('Yankees vs. Red Sox, April 11,2018'),
-     7 ('Yankees vs. Red Sox, May, 5 1976'),
-     8 ('Yankees vs. Marines, Aug. 29, 1996'),
-     9 ('Yankees vs. Royals, ALCS, Oct. 9, 1977 '),
-   10 ('Yankees vs. Angels, June, 10, 1978'),
-   11 ('Yankees vs. Angels, Sept. 9, 2008'),
-   12 ('Yankees vs. Red Sox, July 24, 2004');
+     '1': ('Yankees vs. Orioles, May 19, 1998'),
+     '2': ('Yankees vs. Red Sox, ALCS, Oct. 11, 2003'),
+     '3': ('Yankees vs. Tigers, Aug. 17, 2017'),
+     '4': ('Yankees vs. Red Sox, April 11,2018'),
+     '5': ('Yankees vs. Red Sox, May, 5 1976'),
+     '6': ('Yankees vs. Mariners, Aug. 29, 1996'),
+     '7': ('Yankees vs. Royals, ALCS, Oct. 9, 1977'),
+   '8': ('Yankees vs. Angels, June, 10, 1978'),
+   '9': ('Yankees vs. Angels, Sept. 9, 2008'),
+   '10': ('Yankees vs. Red Sox, July 24, 2004')
 };
     </script>
   </head>
@@ -54,6 +54,7 @@
                     <div id="item-7" class="dragger"><input type="checkbox" id="a7" class="statsCheck" onchange="cbChanged(this,7);"><p></p></div>
                     <div id="item-8" class="dragger"><input type="checkbox" id="a8" class="statsCheck" onchange="cbChanged(this,8);" ><p></p></div>
                     <div id="item-9" class="dragger"><input type="checkbox" id="a9" class="statsCheck" onchange="cbChanged(this,9);" ><p></p></div>
+                    <div id="item-10" class="dragger"><input type="checkbox" id="a10" class="statsCheck" onchange="cbChanged(this,10);" ><p></p></div>
                 </div>
             </div>
             <button id="submitbtn">Submit your rankings</button>
