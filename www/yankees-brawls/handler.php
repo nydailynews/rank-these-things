@@ -1,6 +1,6 @@
 <?php
-$slug = 'test';
-$ranker_id = 1;
+$slug = 'yankees-brawls';
+$ranker_id = 6;
 
 if ( !isset($SERVER_ROOT) ) $SERVER_ROOT = '../../../';
 if ( !isset($DB) ) $DB = '_staging';

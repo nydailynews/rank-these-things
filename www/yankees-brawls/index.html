@@ -23,24 +23,39 @@
     <script>
 	// array of sortableStats titles and ids
 	var statNames = {
-    '1': ('<img src="img/thumb/yankees-orioles-brawl-1998.jpg" alt="Yankees vs. Orioles, May 19, 1998">Yankees vs. Orioles, May 19, 1998'),
-    '2': ('<img src="img/thumb/yankees-red-sox-brawl-2003.jpg" alt="Yankees vs. Red Sox, ALCS, Oct. 11, 2003">Yankees vs. Red Sox, ALCS, Oct. 11, 2003'),
-    '3': ('<img src="img/thumb/yankees-tigers-brawl-2017.jpg" alt="Yankees vs. Tigers, Aug. 17, 2017">Yankees vs. Tigers, Aug. 17, 2017'),
-    '4': ('<img src="img/thumb/yankees-red-sox-brawl-2018.jpg" alt="Yankees vs. Red Sox, April 11,2018">Yankees vs. Red Sox, April 11,2018'),
-    '5': ('<img src="img/thumb/yankees-red-sox-brawl-1976.jpg" alt="Yankees vs. Red Sox, May, 5 1976">Yankees vs. Red Sox, May, 5 1976'),
-    '6': ('<img src="img/thumb/yankees-mariners-brawl-1996.jpg" alt="Yankees vs. Mariners, Aug. 29, 1996">Yankees vs. Mariners, Aug. 29, 1996'),
-    '7': ('<img src="img/thumb/yankees-royals-brawl-1977.jpg" alt="Yankees vs. Royals, ALCS, Oct. 9, 1977">Yankees vs. Royals, ALCS, Oct. 9, 1977'),
-    '8': ('<img src="img/thumb/yankees-angels-brawl-1978.jpg" alt="Yankees vs. Angels, June, 10, 1978">Yankees vs. Angels, June, 10, 1978'),
-    '9': ('<img src="img/thumb/yankees-angels-brawl-2008.jpg" alt="Yankees vs. Angels, Sept. 9, 2008">Yankees vs. Angels, Sept. 9, 2008'),
-    '10': ('<img src="img/thumb/yankees-red-sox-brawl-2004.jpg" alt="Yankees vs. Red Sox, July 24, 2004">Yankees vs. Red Sox, July 24, 2004')
+    '1': ('<span><img src="img/thumb/yankees-orioles-brawl-1998.jpg" alt="Yankees vs. Orioles, May 19, 1998"></span><mark>Yankees vs. Orioles, May 19, 1998</mark>'),
+    '2': ('<span><img src="img/thumb/yankees-red-sox-brawl-2003.jpg" alt="Yankees vs. Red Sox, ALCS, Oct. 11, 2003"></span><mark>Yankees vs. Red Sox, ALCS, Oct. 11, 2003</mark>'),
+    '3': ('<span><img src="img/thumb/yankees-tigers-brawl-2017.jpg" alt="Yankees vs. Tigers, Aug. 17, 2017"></span><mark>Yankees vs. Tigers, Aug. 17, 2017</mark>'),
+    '4': ('<span><img src="img/thumb/yankees-red-sox-brawl-2018.jpg" alt="Yankees vs. Red Sox, April 11,2018"></span><mark>Yankees vs. Red Sox, April 11,2018</mark>'),
+    '5': ('<span><img src="img/thumb/yankees-red-sox-brawl-1976.jpg" alt="Yankees vs. Red Sox, May, 5 1976"></span><mark>Yankees vs. Red Sox, May, 5 1976</mark>'),
+    '6': ('<span><img src="img/thumb/yankees-mariners-brawl-1996.jpg" alt="Yankees vs. Mariners, Aug. 29, 1996"></span><mark>Yankees vs. Mariners, Aug. 29, 1996</mark>'),
+    '7': ('<span><img src="img/thumb/yankees-royals-brawl-1977.jpg" alt="Yankees vs. Royals, ALCS, Oct. 9, 1977"></span><mark>Yankees vs. Royals, ALCS, Oct. 9, 1977</mark>'),
+    '8': ('<span><img src="img/thumb/yankees-angels-brawl-1978.jpg" alt="Yankees vs. Angels, June, 10, 1978"></span><mark>Yankees vs. Angels, June, 10, 1978</mark>'),
+    '9': ('<span><img src="img/thumb/yankees-angels-brawl-2008.jpg" alt="Yankees vs. Angels, Sept. 9, 2008"></span><mark>Yankees vs. Angels, Sept. 9, 2008</mark>'),
+    '10': ('<span><img src="img/thumb/yankees-red-sox-brawl-2004.jpg" alt="Yankees vs. Red Sox, July 24, 2004"></span><mark>Yankees vs. Red Sox, July 24, 2004</mark>')
 };
     </script>
 <style>
+#statsCon .dragger {
+	clear: both;
+	height: 110px;
+}
 #statsCon .with-image {
     min-height: 100px;
 }
 #statsCon .with-image .dragger p {
 	vertical-align: middle;
+    clear: both;
+}
+#statsCon .with-image .dragger mark {
+    background: none;
+    position: relative;
+    top: 40px;
+	left: 5px;
+}
+#statsCon .with-image .dragger span {
+    display: block;
+    float: left;
 }
 #statsCon .with-image .dragger img {
 	margin: 0 5px 0 0;
@@ -48,13 +63,25 @@
     height: 100px;
     float: none;
 }
+@media only screen and (max-width: 500px) {
+	#statsCon .dragger {
+		height: 60px;
+	}
+	#statsCon .with-image .dragger img {
+		width: 50px;
+		height: 50px;
+	}
+	#statsCon .with-image .dragger mark {
+		top: 15px;
+	}
+}
+
 </style>
   </head>
   <body>
     <main>
         <h1>Rank 'Em: The Biggest Yankees Brawls</h1>
-        <p>DESCRIPTION</p>
-        <p class="desc">Drag the items up or down to rank them, with the biggest brawl on top. When you submit your results, you'll see how your picks compare with other readers'.</p>
+        <p class="desc">Drag the items up or down to rank them, with the most-vicious brawl on top. When you submit your results, you'll see how your picks compare with other readers'.</p>
 
         <section id="statsCon">
             <div id="statsAll" class="connectedSortable">
