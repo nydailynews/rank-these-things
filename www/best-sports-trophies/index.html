@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TITLE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="distribution" content="global" />
+    <meta name="robots" content="noindex" />
+    <meta name="language" content="en, sv" />
+    <!-- EDIT: Add the URL of the article this quiz is embedded in, once you know what that is -->
+    <link rel="canonical" href="" />
+    <link href="../css/ranker.css" rel="stylesheet" media="screen">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700|PT+Serif' rel='stylesheet'>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="../js/lib/jquery.ui.touch-punch.min.js"></script>
+    <script src="../js/lib/miso.ds.deps.js"></script>
+    <script src="../js/ranker.min.js"></script>
+<!--
+    <script src="../js/ranker.js"></script>
+-->
+    <script>
+	// array of sortableStats titles and ids
+	var statNames = {
+    '1': 'Stanley Cup – NHL',
+    '2': 'Larry O’Brien Trophy – NBA',
+    '3': 'Men‘s World Cup Trophy – Soccer',
+    '4': 'Comissioners Trophy – MLB',
+    '5': 'Rosewater Dish — Wimbledon', 
+    '6': 'Silver Guilt Cup — Wimbledon',
+    '7': 'WNBA Championship Trophy — WNBA',
+    '8': 'Vince Lombardi Trophy — NFL',
+    '9': 'World Heavyweight Championship — WWE',
+    '10': 'WWE Raw Women‘s Championship — WWE',
+    '11': 'Heisman Trophy — College Football',
+    '12': 'Harley J. Earl Trophy — Daytona 500',
+    '13': 'Barclays Premier League Trophy — English Premier League',
+    '14': 'Borg-Warner Trophy — Indy 500',
+    '15': 'Green Jacket — Master‘s',
+    '16': 'Coaches Trophy — BCS National Title',
+    '17': 'Mustard Belt — Nathan‘s Hot Dog Eating Contest',
+    '18': 'Phillip F. Anschultz Trophy — MLS',
+    '19': 'Steinfeld Cup — Major League Lacrosse',
+    '20': 'Swaythling Cup — Men‘s Team World Table Tennis Championship',
+    '21': 'Corbillon Cup — Women‘s Team World Table Tennis Championship',
+    '22': 'Triple Crown Trophy — Horse Racing',
+    '23': 'Women‘s World Cup Trophy — Soccer',
+    '24': 'Men‘s U.S. Open Trophy — Men‘s U.S. Open Singles Championship',
+    '25': 'Women‘s U.S. Open Trophy — Women‘s U.S. Open Singles Championship',
+    '26': 'Coupe De Mousquetaires — Men‘s French Open Singles Championship',
+    '27': 'Coupe Suzanne-Lenglen — Women‘s French Open Singles Championship',
+    '28': 'Norman Brookes Challenge Cup — Men‘s Australian Open Singles Championship',
+    '29': 'Daphne Akhurst Memorial Cup — Women‘s Australian Open Singes Championship',
+};
+    </script>
+  </head>
+  <body>
+    <main>
+        <h1>TITLE</h1>
+        <p>DESCRIPTION</p>
+        <p class="desc">Drag the items up or down to rank them, with the most damning on top. When you submit your results, you'll see how your picks compare with other readers'.</p>
+
+        <section id="statsCon">
+            <div id="statsAll" class="connectedSortable">
+                <div id="sortableStats">
+                    <div id="item-1" class="dragger"><input type="checkbox" id="a1" class="statsCheck" onchange="cbChanged(this,1);"><p></p></div>
+                    <div id="item-2" class="dragger"><input type="checkbox" id="a2" class="statsCheck" onchange="cbChanged(this,2);"><p></p></div>
+                    <div id="item-3" class="dragger"><input type="checkbox" id="a3" class="statsCheck" onchange="cbChanged(this,3);" ><p</p></div>
+                    <div id="item-4" class="dragger"><input type="checkbox" id="a4" class="statsCheck" onchange="cbChanged(this,4);"><p></p></div>
+                    <div id="item-5" class="dragger"><input type="checkbox" id="a5" class="statsCheck" onchange="cbChanged(this,5);"><p></p></div>
+                    <div id="item-6" class="dragger"><input type="checkbox" id="a6" class="statsCheck" onchange="cbChanged(this,6);"><p></p></div>
+                    <div id="item-7" class="dragger"><input type="checkbox" id="a7" class="statsCheck" onchange="cbChanged(this,7);"><p></p></div>
+                    <div id="item-8" class="dragger"><input type="checkbox" id="a8" class="statsCheck" onchange="cbChanged(this,8);" ><p></p></div>
+                    <div id="item-9" class="dragger"><input type="checkbox" id="a9" class="statsCheck" onchange="cbChanged(this,9);" ><p></p></div>
+                </div>
+            </div>
+            <button id="submitbtn">Submit your rankings</button>
+        </section>
+
+        <section id="rankResults">
+            <h2>OVERALL READER PICKS:</h2>
+            <p>Rankings based on the total votes.</p>
+            <div id="resultsList"></div>
+        </section>
+    </main>
+
+    <script src="../js/lib/bootstrap.min.js"></script>
+  </body>
+</html>

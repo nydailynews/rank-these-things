@@ -1,0 +1,12 @@
+INSERT INTO ranker (slug, create_date) VALUES ('new-york-jets-draft-busts', NOW());
+INSERT INTO ranker_items (ranker_id, title) VALUES
+(5,'DeWayne Robertson'),
+(5,'Vernon Gholston'),
+(5,'Blair Thomas'),
+(5,'Lam Jones'),
+(5,'Russell Carter'),
+(5,'Roger Vick'),
+(5,'Dave Cardigan'),
+(5,'Johnny Mitchell'),
+(5,'Ron Faurot'),
+(5,'Kyle Brady');
