@@ -27,17 +27,7 @@ Peggy Bustamante, Joe Murphy
     1. Copy the contents of [data/items.sql](data/items.sql) into a scratch text file somewhere.
     1. Log in to the database server.
     1. Follow the instructions in the comments on `data/items.sql`. You should be going back and forth between the database client and your scratch file.
-1. After you finish that, you should have the results from a query that include the item id's for each of the items you're ranking. **Take those ID's and put them back into your `index.html`, in the `var statNames = {` javascript object, as the object keys on that object.
-
-## What's in here?
-
-The project contains the following folders and important files:
-
-* ``www/_blank/index.html`` -- main file.
-* ``www/js`` -- ranker.js has all the action and business logic.
-* ``www/data`` -- Data files, in a csv format and also a SQL dump of the vote count.
-* ``www/incl`` -- PHP file "ranker.php" for recording user's selections/votes
-* ``www/css`` -- Base css files to get rolling with.
+1. After you finish that, you should have the results from a query that include the item id's for each of the items you're ranking. **Take those ID's and put them back** into your `index.html`, in the `var statNames = {` javascript object, as the object keys on that object.
 
 ### What needs configuring?
 
@@ -45,4 +35,19 @@ The project contains the following folders and important files:
 * The statNames in each ranker's html document's `<head>` element
 * The handler.php in each ranker's directory
 
+### Initial setup
+
 #### How to set up the database
+
+TK
+
+## What's in here?
+
+The project contains the following folders and important files:
+
+* [www/_blank/](www/_blank/) -- project template.
+* [www/_blank/index.html](www/_blank/index.html) -- main file.
+* [www/js](www/js/) -- ranker.js has all the action and business logic.
+* [data](data/) -- Data files, in a csv format and also a SQL dump of the vote count.
+* [www/incl](www/incl/) -- PHP file "ranker.php" for recording user's selections/votes.
+* [www/css](www/css/) -- Base css files to get rolling with.
