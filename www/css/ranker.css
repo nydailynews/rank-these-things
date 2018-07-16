@@ -1,3 +1,44 @@
+/* RANKER-WITH-PHOTO styles */
+.has-photos #statsCon .dragger {
+   clear: both;
+   height: 110px;
+}
+.has-photos #statsCon .with-image {
+   min-height: 100px;
+}
+.has-photos #statsCon .with-image .dragger p {
+   vertical-align: middle;
+   clear: both;
+}
+.has-photos #statsCon .with-image .dragger mark {
+   background: none;
+   position: relative;
+   top: 40px;
+   left: 5px;
+}
+.has-photos #statsCon .with-image .dragger span {
+   display: block;
+   float: left;
+}
+.has-photos #statsCon .with-image .dragger img {
+   margin: 0 5px 0 0;
+   width: 100px;
+   height: 100px;
+   float: none;
+}
+@media only screen and (max-width: 500px) {
+   .has-photos #statsCon .dragger {
+       height: 60px;
+   }
+   .has-photos #statsCon .with-image .dragger img {
+       width: 50px;
+       height: 50px;
+   }
+   .has-photos #statsCon .with-image .dragger mark {
+       top: 15px;
+   }
+}
+
 body {
     font-family: "Open Sans Condensed",sans-serif;
     font-size: 14px;

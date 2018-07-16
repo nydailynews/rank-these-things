@@ -55,7 +55,7 @@ $(document).ready(function(){ // begin document.ready block
 ************************************************************/
 	
 	$('#rankResults').addClass('hide');
-	buildSortStats()
+	buildSortStats();
 	
 	
 /********************************************************************
@@ -69,6 +69,7 @@ function buildSortStats() {
 	// array of sortableStats titles and ids is called statNames
     // and is set in the head element of the ranker's html file.
 	var fullStats = shuffle(Object.keys(statNames));
+    if ( typeof noshuffle !== 'undefined' ) fullStats = Object.keys(statNames);
 	// compares sortedIDs[] to full list of stats and adds whatever is missing
 	
 	var exStats = new Array();
