@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rank 'Em: Best sports trophies</title>
+    <title>Rank 'Em Sports Trophies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
     <meta name="distribution" content="global" />
@@ -23,28 +23,27 @@
     <script>
 	// array of sortableStats titles and ids
 	var statNames = {
-    '1': ('<span><img src="img/stanley-cup.jpg" alt="Stanley Cup – NHL"></span><mark>Stanley Cup — NHL</mark>'),
-    '2': ('<span><img src="img/mens-world-cup-trophy.jpg" alt="Men‘s World Cup Trophy – Soccer"></span><mark>Men’s World Cup Trophy — Soccer</mark>'),
+    '1': ('<span><img src="img/silver-gilt-cup.jpg" alt="Silver Gilt Cup — Wimbledon"></span><mark>Silver Gilt Cup — Wimbledon</mark>'),
+    '2': ('<span><img src="img/mens-world-cup.jpg" alt="Men‘s World Cup Trophy – Soccer"></span><mark>Men’s World Cup Trophy — Soccer</mark>'),
     '3': ('<span><img src="img/heisman-trophy.jpg" alt="Heisman Trophy — College Football"></span><mark>Heisman Trophy — College Football</mark>'),
-    '4': ('<span><img src="img/barclays-premier-league-trophy.jpg" alt="Barclays Premier League Trophy — Soccer"></span><mark>Barclays Premier League Trophy — Soccer</mark>'),
+    '4': ('<span><img src="img/larry-obrien-trophy.jpg" alt="Larry O’Brien Trophy — NBA"></span><mark>Larry O’Brien Trophy — NBA</mark>'),
     '5': ('<span><img src="img/green-jacket.jpg" alt="Green Jacket — Master‘s Golf Tournament"></span><mark>Green Jacket — Master’s Golf Tournament</mark>'),
-    '6': ('<span><img src="img/womens-mustard-belt.jpg" alt="Women’s Mustard Belt — Nathan‘s Hot Dog Eating Contest"></span><mark>Women’s Mustard Belt — Nathan’s Hot Dog Eating Contest</mark>'),
-    '7': ('<span><img scr=img/steinfeld-cup.jpg" alt="Steinfeld Cup — Major League Lacrosse"></span><mark>Steinfeld Cup — Major League Lacrosse</mark>'),
-    '8': ('<span><img src=img/womens-world-cup-trophy.jpg" alt="Women‘s World Cup Trophy — Soccer"></span<mark>Women’s World Cup Trophy — Soccer</mark>'),
-    '9': ('<span><img src=img/coupe-suzanne-lenglen.jpg" alt="Coupe Suzanne-Lenglen — Women‘s French Open Singles Championship"><Coupe Suzzane-Lenglen — Womne’s French Open Singles Championship</mark>'),
-    '10': ('<span><img src=img/wnba-championship-trophy.jpg" alt="WNBA Championship Trophy"></span><mark>WNBA Championship Trophy</mark>'),
+    '6': ('<span><img src="img/stanley-cup.jpg" alt="Stanley Cup — NHL"></span><mark>Stanley Cup — NHL</mark>'),
+    '7': ('<span><img src="img/commissioners-trophy.jpg" alt="Commissioner’s Trophy — MLB"></span><mark>Commissioner’s Trophy — MLB</mark>'),
+    '8': ('<span><img src="img/rosewater-dish.jpg" alt="Rosewater Dish — Wimbledon "></span><mark>Rosewater Dish — Wimbledon</mark>'),
+    '9': ('<span><img src="img/vince-lombardi-trophy.jpg" alt="Vince Lombardi Trophy — NFL"></span><mark>Vince Lombardi Trophy — NFL</mark>'),
+    '10': ('<span><img src="img/coaches-trophy.jpg" alt="Coaches Trophy — BCS National Championship"></span><mark>Coaches Trophy — BCS National Championship</mark>'),
 };
     </script>
   </head>
   <body class="has-photos">
     <main>
-        <h1>Rank 'Em: Best sports trophies</h1>
-        <p>Rank the best trophies in sports</p>
-        <p class="desc">Drag the items up or down to rank them, with the most damning on top. When you submit your results, you'll see how your picks compare with other readers'.</p>
+        <h1>Rank 'Em: Sports Trophies</h1>
+        <p class="desc">Drag the items up or down to rank them. When you submit your results, you'll see how your picks compare with other readers'.</p>
 
         <section id="statsCon">
             <div id="statsAll" class="connectedSortable">
-                <div id="sortableStats">
+                <div id="sortableStats" class="with-image">
                     <div id="item-1" class="dragger"><input type="checkbox" id="a1" class="statsCheck" onchange="cbChanged(this,1);"><p></p></div>
                     <div id="item-2" class="dragger"><input type="checkbox" id="a2" class="statsCheck" onchange="cbChanged(this,2);"><p></p></div>
                     <div id="item-3" class="dragger"><input type="checkbox" id="a3" class="statsCheck" onchange="cbChanged(this,3);" ><p</p></div>
