@@ -1,6 +1,6 @@
 # Run the query on line two first.
 INSERT INTO ranker (slug, create_date) VALUES ('name-of-your-ranker', NOW());
-# After you run it, run this query. You'll get a few records back,
+# After you run it, run the next query (the one on lne 5). You'll get a few records back,
 # you're interested in the value of the ranker_id field for the new record you created.
 SELECT * FROM ranker;
 # Fine-tune this query next. Instead of the "2" that's on each line, use the ranker_id.
